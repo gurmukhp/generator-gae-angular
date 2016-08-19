@@ -4,7 +4,7 @@
   "description": "Yeoman generator intended to jumpstart creation of AngularJS websites with App Engine.",
   "license": "Apache License Version 2.0",
   "main": "app/index.js",
-  "repository": "",
+  "repository": "gurmukhp/generator-gae-angular",
   "author": {
     "name": "Gurmukh Panesar",
     "email": "gurmukhp@gmail.com"
