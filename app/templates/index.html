@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="<%= definedAppName %>.app">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title><%= definedAppName %></title>
+    <link rel="stylesheet" type="text/css" href="/app.css">
+  </head>
+  <body>
+    <base href="/"/>
+    <header>Welcome to <%= definedAppName %>!</header>
+
+    <a href="page1">Page 1</a><br/>
+    <a href="page2">Page 2</a><br/>
+    <a href="page3">Page 3</a><br/>
+    <main>
+      <div ng-view class="view"></div>
+    </main>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

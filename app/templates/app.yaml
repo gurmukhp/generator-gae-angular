@@ -1,0 +1,36 @@
+application: #enter app name here
+version: prototype
+runtime: python27
+api_version: 1
+threadsafe: true
+module: default
+skip_files:
+- ^bower_components/.*$
+- ^node_modules/.*$
+- ^dev/.*$
+handlers:
+
+- url: /page1
+  static_files: public/static/page1.html
+  upload: public/static/page1.html
+  secure: always
+
+- url: /page2
+  static_files: public/static/page2
+  upload: public/static/page2.html
+  secure: always
+
+- url: /page3
+  static_files: public/static/page3.html
+  upload: public/static/page3.html
+  secure: always
+
+- url: /
+  static_files: public/static/index.html
+  upload: public/static/index.html
+  secure: always
+
+- url: /(.*)
+  static_files: public/static/\1
+  upload: public/static/(.*)
+  secure: always
