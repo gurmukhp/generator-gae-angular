@@ -1,6 +1,6 @@
 goog.module('<%= definedAppName %>.components.<%= componentName %>.<%= capitalizedComponentName %>Component');
 
-const <%= capitalizedComponentName %> = goog.require('<%= definedAppName %>.components.<%= componentName %>.<%= capitalizedComponentName %>Controller');
+const <%= capitalizedComponentName %>Controller = goog.require('<%= definedAppName %>.components.<%= componentName %>.<%= capitalizedComponentName %>Controller');
 
 
 /** @type {!angular.Component} */

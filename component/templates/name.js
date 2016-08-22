@@ -1,6 +1,6 @@
 goog.module('<%= definedAppName %>.components.<%= componentName %>.module');
 
-const <%= capitalizedComponentName %> = goog.require('<%= definedAppName %>.components.<%= componentName %>.<%= capitalizedComponentName %>Component');
+const <%= capitalizedComponentName %>Component = goog.require('<%= definedAppName %>.components.<%= componentName %>.<%= capitalizedComponentName %>Component');
 
 
 /**
@@ -10,4 +10,5 @@ const <%= capitalizedComponentName %> = goog.require('<%= definedAppName %>.comp
 exports =
     angular.module('<%= definedAppName %>.components.<%= componentName %>', []);
 
-exports.component('<%= componentName %>', <%= capitalizedComponentName %>);
+exports.component(
+    '<%= componentName %>', <%= capitalizedComponentName %>Component);

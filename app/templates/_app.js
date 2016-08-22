@@ -1,6 +1,6 @@
 goog.module('<%= definedAppName %>.app');
 
-const menu = goog.require('hello.components.menu.module');
+const menu = goog.require('<%= definedAppName %>.components.menu.module');
 
 
 /**
