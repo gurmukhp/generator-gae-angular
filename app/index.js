@@ -53,6 +53,7 @@ var Generator = yeoman.generators.Base.extend({
 
     this.directory('scss', 'dev/scss');
     this.directory('partials', 'dev/partials');
+    this.directory('components', 'dev/components');
   },
 
   install: function() { this.installDependencies({bower: false}); },

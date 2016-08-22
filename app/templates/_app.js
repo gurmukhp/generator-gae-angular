@@ -1,12 +1,12 @@
-goog.provide('<%= definedAppName %>.app');
+goog.module('<%= definedAppName %>.app');
 
 /**
  * Loads <%= definedAppName %> app with dependencies.
  */
-<%= definedAppName %>.app.module =
+exports.module =
     angular.module('<%= definedAppName %>.app', ['ngRoute', 'ngAnimate']);
 
-<%= definedAppName %>.app.module.config(function(
+exports.module.config(function(
     $routeProvider, $locationProvider, $compileProvider) {
   $routeProvider.when('/page1', {templateUrl: 'partials/page1.html'})
       .when('/page2', {templateUrl: 'partials/page2.html'})
