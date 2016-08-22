@@ -17,9 +17,12 @@ Run
     yo gae-angular
 and answer the questions.
 
-    yo gae-angular:component
 
 To add a new component, run
+
+    yo gae-angular:component
+
+
 
 
 ### License
