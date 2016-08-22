@@ -1,10 +1,13 @@
 goog.module('<%= definedAppName %>.app');
 
+const menu = goog.require('hello.components.menu.module');
+
+
 /**
  * Loads <%= definedAppName %> app with dependencies.
  */
-exports.module =
-    angular.module('<%= definedAppName %>.app', ['ngRoute', 'ngAnimate']);
+exports.module = angular.module(
+    '<%= definedAppName %>.app', ['ngRoute', 'ngAnimate', menu.name]);
 
 exports.module.config(function(
     $routeProvider, $locationProvider, $compileProvider) {

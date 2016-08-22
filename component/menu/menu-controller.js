@@ -1,4 +1,4 @@
-goog.module('<%= definedAppName %>.components.<%= componentName %>.<%= capitalizedComponentName %>Controller');
+goog.module('<%= definedAppName %>.components.menu.MenuController');
 
 /**
  * Component template controller.
@@ -21,5 +21,5 @@ exports = function($rootScope, $scope, $element, $q) {
   /** @private {!angular.$q} */
   this.ngQ_ = $q;
 
-  console.log('<%= componentName %> component setup!');
+  console.log('menu component setup!');
 };
