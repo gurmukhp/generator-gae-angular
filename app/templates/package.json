@@ -10,6 +10,7 @@
     "google-closure-library": "^20160713.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-batch": "^1.0.5",
     "gulp-closure-compiler": "^0.4.0",
     "gulp-csscomb": "^3.0.7",
     "gulp-sass": "^2.3.2",

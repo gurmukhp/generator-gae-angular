@@ -5,6 +5,7 @@ import watch from 'gulp-watch';
 import closureCompiler from 'gulp-closure-compiler';
 import webserver from 'gulp-webserver';
 import util from 'gulp-util';
+import batch from 'gulp-batch';
 
 /**
  * Prevents errors in streams from stopping the watch task.
@@ -131,7 +132,9 @@ gulp.task(
       copyLibraries();
 
       watch('./dev/**/*.scss', () => { compileCss(true); });
-      watch('./dev/**/*.js', () => { compileJs(true); });
+      watch('./dev/**/*.js', batch(function(events, done) {
+              compileJs(true, false);
+            }));
       watch('./dev/**/*.html', copyHtml);
 
       return gulp.src('./public/static').pipe(webserver({
