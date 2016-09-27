@@ -134,6 +134,7 @@ gulp.task(
       watch('./dev/**/*.scss', () => { compileCss(true); });
       watch('./dev/**/*.js', batch(function(events, done) {
               compileJs(true, false);
+              done();
             }));
       watch('./dev/**/*.html', copyHtml);
 
